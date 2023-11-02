@@ -6,7 +6,11 @@ authors = ["Guido Petri <18634426+guidopetri@users.noreply.github.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.12"
+python = "~3.12"
+pyright = "^1.1.333"
+polars = "^0.19.12"
+requests = "^2.31.0"
+pandas = "^2.1.2"
 
 [tool.poetry.group.dev.dependencies]
 pytest = "^7.4.3"
@@ -16,3 +20,6 @@ pytest-cov = "^4"
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.pyright]
+strict = ["src/"]
