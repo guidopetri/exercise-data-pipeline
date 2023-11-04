@@ -11,15 +11,6 @@ class Concept2ApiManager(object):
         self.auth_token = os.getenv('C2_TOKEN')
         self.base_url = 'https://log.concept2.com/api/'
 
-    def __call(self):
-        pass
-
-    def __get(self):
-        pass
-
-    def __post(self):
-        pass
-
     def __add_auth_header(self, headers: dict[str, str]) -> dict[str, str]:
         headers['Authorization'] = f'Bearer {self.auth_token}'
         return headers
